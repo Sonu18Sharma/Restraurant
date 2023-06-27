@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Arvo&family=Barlow:wght@100&family=Caveat&family=Martian+Mono&family=Oswald:wght@200;500&family=Roboto+Slab:wght@600&family=Roboto:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  background-image: url(/image/jonathan-borba-8l8Yl2ruUsg-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+ 
+ }
+
+ /* nav-bar */
+nav {
+  width: 100%;
+  margin: 20px 0px;
+  text-align: center;
+  border-radius: 15px;
+  height:48px;
+  margin-left: 90px;
+}
+nav ul {
+  list-style: none;
+  overflow: hidden; 
+}
+  nav ul li {
+  float: left;
+  width: 20%; 
+  font-size: 20px;
+  margin-top: 9px;
+  font-family: 'Arvo', serif;
+  margin-right: 20px;
+
+}
+nav ul li a {
+  position: relative;
+  color: rgb(234, 174, 64);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+nav ul li a:before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ff9800;
+  transform: scaleX(0);
+  transition: transform 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ff9800;
+}
+
+nav ul li a:hover:before {
+  transform: scaleX(1);
+}
+nav ul li a:hover{
+    color: rgb(255, 255, 255);
+    transition: 0.2s ease-in;
+}
+
+/* main-content */
+
+#h1 {
+    text-align: center;
+    padding: 20px;
+    height: 665px;
+}
+
+#h1 h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: rgb(255, 254, 254);
+    padding-top: 190px;
+    font-weight: bold;
+    font-family: 'Arvo', serif;
+    letter-spacing:.2rem;
+}
+/* button */
+.my-button {
+  position: relative;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 12px 24px;
+  font-size: 17px;
+  border-radius: 20px;
+  border-color: rgb(255, 255, 255);
+  border-width: 2px;
+  cursor: pointer;
+  overflow: hidden;
+  margin-top: 19px;
+  font-family: 'Arvo', serif;
+  font-weight: lighter ;
+}
+.fa-burger {
+    transition: transform 0.3s, color 0.3s;
+  }
+.my-button:hover .fa-burger {
+    transform: scale(1.2);
+    color: #ffac33;
+}
+/* menu-card */
+.menu-card {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.menu-card:hover {
+  transform: scale(1.06);
+}
+
+.menu-image {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.menu-details {
+  flex-grow: 1;
+}
+
+.menu-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.menu-description {
+  margin-bottom: 10px;
+}
+
+.menu-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ff9800;
+}
+.menu-card {
+  cursor: pointer;
+}
+
+.sub-menu {
+  display: none;
+}
+
+.sub-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sub-menu li {
+  margin-bottom: 10px;
+  font-family: 'Arvo', serif;
+}
+
+.sub-menu li a {
+  color: #333333;
+  text-decoration: none;
+}
+h3{
+  font-family: 'Arvo', serif;
+  font-weight: lighter;
+}
+
+/* contact-us */
+
+.contact-section {
+  background-color: #f9f9f9;
+  width: 100%;
+  margin-top: 60px;
+  border-radius: 13px;
+  margin-bottom: 50px;
+}
+
+.contact-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333333;
+  padding-top: 10px;
+  font-family: 'Arvo', serif;
+}
+
+.social-icons {
+  text-align: center;
+  padding-bottom: 18px;
+}
+
+.social-icon {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 24px;
+  color: #333333;
+}
+
+.social-icon:hover {
+  color: #ff9800;
+}
